@@ -35,19 +35,26 @@
   /* ---- Footer ----*/
   
   .footer {
-    display:flex;
-    justify-content: center;
-    align-items: center;
     background-color: #333;
     color:#eee;
-    height: 60px;
+    height: auto;
   }
   
-  .footer-content {
+  .section-footerWrapper {
+    display: block;
     text-align: center;
   }
+
   
-  span {
+
+  .footer-nav, .footer-mediumSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  span  {
     color: red;
+    border: 0;
   }
   
