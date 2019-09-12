@@ -9,7 +9,10 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background-color:#333;
+  }
+
+  body {
+    color: #222831;
   }
   
   nav ul {
@@ -22,8 +25,10 @@
   }
   
   a {
-    color:#eee;
+    color:#222831;
     text-decoration: none;
+    font-family: 'Baloo', cursive;
+    font-size: 16px;
   }
   
   /* ----- Content ----- */
@@ -38,6 +43,10 @@
     background-color: #333;
     color:#eee;
     height: auto;
+  }
+
+  .footer a {
+    color: #fff;
   }
   
   .section-footerWrapper {
@@ -56,3 +65,13 @@
     border: 0;
   }
   
+
+  p {
+    font-family: 'Quicksand';
+    font-size: 
+  }
+
+  .title-hero {
+    font-family: 'Courgette';
+    font-size: 40px;
+  }
