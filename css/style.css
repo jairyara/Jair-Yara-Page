@@ -34,13 +34,13 @@
   /* ----- Content ----- */
   
   .hero {
-    padding: 15%;
+    padding: 5%;
   }
   
   /* ---- Footer ----*/
   
   .footer {
-    background-color: #333;
+    background-color: #222831;
     color:#eee;
     height: auto;
   }
@@ -74,4 +74,14 @@
   .title-hero {
     font-family: 'Courgette';
     font-size: 40px;
+  }
+
+  .section-title {
+    font-family: 'Baloo', cursive;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-family: 'Quicksand';
+    font-size: 14px;
   }
