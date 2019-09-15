@@ -2,32 +2,92 @@
   --color-primary: #222831; 
   --color-primaryMedium: #2E3642;
   --color-accent: #3C4757;
-  --color-grayLightMedium:#EFEFEF;
-  --color-grayLight: #EEEEEE;
+  --color-grayLightMedium:#E5E7EA;
+  --color-grayLight: #EEE;
   --color-grayMedium: #BBB;
   --color-grayDark: #313337;
   --color-textLight: #fff;
   --color-textDark: #000;
+  --color-background-aux: #0f7ce9;
+  --space-p20: padding: 20px;
+  --space-p15: padding: 15px;
+  --space-p10: padding: 10px;
 }
 
+/*--- General styles ---*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  .section-title {
+    font-family: 'Baloo', cursive;
+    font-size: 20px;
+    padding: 0 0 40px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-family: 'Quicksand';
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .author-post{
+    font-family: 'Quicksand';
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+
+  .date-post {
+    font-family: 'Quicksand';
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  p.author-post span, p.date-post span {
+    font-weight: bold;
+  }
+
+  .more-projects, .more-post {
+    max-width: 300px;
+    min-width: 250px;
+    width: auto;
+    height: 40px;
+    border-radius: 3px;
+    color: var(--color-primary);
+    background: var(--color-textLight);
+    border: 0;
+    margin: 0 auto 30px;
+    text-align: center;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+  }
+
+  .more-projects:hover, .more-post:hover {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+    /*--- Header ---*/
+
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    max-width: 1100px;
+    max-width: 975px;
     margin: 0 auto;
-  }
-
-  body {
-    color: var(--color-primary);
   }
   
   nav ul {
@@ -40,19 +100,25 @@
   }
   
   a {
-    color:#222831;
+    color: var(--color-primary);
     text-decoration: none;
     font-family: 'Baloo', cursive;
     font-size: 16px;
   }
   
-  /* ----- Content ----- */
+  /* ----- Hero Content ----- */
   
   .hero {
-    padding: 40px 0;
+    padding: 3% 0;
     text-align: center;
-    max-width: 1100px;
+    max-width: 975px;
     margin: 0 auto;
+  }
+
+  .title-hero {
+    font-family: 'Courgette';
+    font-size: 40px;
+    padding: 30px 0;
   }
 
   .hero-image img {
@@ -61,25 +127,23 @@
   
   .hero-description {
     text-align: left;
-  }
-
-  .title-hero {
-    padding: 30px 0;
+    font-family: 'Quicksand', sans-serif;
   }
 
   /* --- Portfolio --- */
 
   .portfolio {
-    max-width: 1100px;
+    max-width: 975px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .project-container {
     padding: 20px;
+    margin: 0 auto;
   }
 
   .img-project img {
@@ -88,21 +152,42 @@
   }
 
   .portfolio-projectsContainer {
-    max-width: 330px;
+    max-width: 300px;
     width: auto;
+    min-height: 300px;
+    max-height: 600px;
+    height: auto;
     background: var(--color-grayLightMedium);
     border-radius: 5px;
+  }
+
+  .project-btn {
+    max-width: 300px;
+    min-width: 250px;
+    width: auto;
+    height: 40px;
+    border-radius: 3px;
+    color: var(--color-primary);
+    background: var(--color-textLight);
+    border: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
   }
 
 /* --- Blog post --- */
 
 .blog-post {
-  max-width: 1100px;
+  max-width: 975px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .img-post img {
@@ -111,7 +196,7 @@
 }
 
 .blog-postContainer {
-  max-width: 330px;
+  max-width: 300px;
   width: auto;
   background: var(--color-grayLightMedium);
   border-radius: 5px;
@@ -121,8 +206,27 @@
   padding: 20px;
 }
 
-.section-title {
+.description-post {
+  font-family: 'Quicksand', sans-serif;
+  padding: 10px 0 15px;
+}
+
+.post-button {
+  max-width: 300px;
+  min-width: 250px;
+  width: auto;
+  height: 40px;
+  border-radius: 3px;
+  color: var(--color-primary);
+  background: var(--color-textLight);
+  border: 0;
+  margin: 0 auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
 }
 
 /*--- Contact ---*/
@@ -132,24 +236,118 @@
   background: var(--color-grayLightMedium); 
   margin: 0 auto 40px;
   border-radius: 5px;
-  padding: 20px;
+  padding: 30px;
+}
+
+.form-contactWrapper {
+  width: 500px;
+  background: var(--color-grayLightMedium); 
+  margin: 40px auto;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+form div h2.section-title {
+  padding: 0 20px 20px;
+}
+
+label {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  padding: 15px 0;
+}
+
+.input-container input  {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  text-align: left;
+  padding: 15px 0 5px;
+  margin-bottom: 15px;
+  min-width: 300px;
+  max-width: 440px;
+  width: 440px;
+  height: auto;
+  border: 0;
+  color: var(--color-primaryMedium);
+  background: none;
+  border-bottom: 1px solid var(--color-grayMedium);
+}
+
+textarea {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  text-align: left;
+  padding: 15px 0 5px;
+  min-width: 300px;
+  max-width: 440px;
+  width: 440px;
+  min-height: 50px;
+  max-height: 100px;
+  height: 100px;
+  color: var(--color-primaryMedium);
+  margin: 0 0 15px 0;
+  border: 0;
+  background: none;
+  border-bottom: 1px solid var(--color-grayMedium);
+  vertical-align: text-bottom;
+}
+
+.btn-form input {
+  max-width: 400px;
+  min-width: 350px;
+  width: auto;
+  height: 40px;
+  border-radius: 3px;
+  color: var(--color-primary);
+  background: var(--color-textLight);
+  border: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
 }
 
 
 /*--- View more --- */
 
+.visit-oneago div h2.section-title {
+  padding: 0 20px 20px;
+}
+
 .section-titleWrapper, .btn-oneago {
-  max-width: 1100px;
+  max-width: 975px;
   margin: 0 auto;
 }
 
 .visit-oneago {
-  background: #0f7ce9;
+  background: var(--color-background-aux);
   padding: 40px;
   text-align: center;
   color: var(--color-textLight);
 }
 
+.btn-oneago input {
+  max-width: 325px;
+  min-width: 275px;
+  width: auto;
+  height: 40px;
+  border-radius: 3px;
+  color: var(--color-primary);
+  background: var(--color-textLight);
+  border: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+}
 
   /* ---- Footer ----*/
   
@@ -158,10 +356,11 @@
     color: var(--color-grayLight);
     height: auto;
     margin: 0 auto;
+    padding: 20px;
   }
   
   .footer-content {
-    max-width: 1100px;
+    max-width: 975px;
     margin: 0 auto;
   }
 
@@ -172,6 +371,8 @@
   .section-footerWrapper {
     display: block;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
   }
 
   .footer-nav {
@@ -187,35 +388,20 @@
     align-items: center;
     height: 30px;
   }
-  
-  span  {
-    color: red;
-    border: 0;
-  }
-  
-
-  p {
-    font-family: 'Quicksand';
-    font-size: 
-  }
-
-  .title-hero {
-    font-family: 'Courgette';
-    font-size: 40px;
-  }
-
-  .section-title {
-    font-family: 'Baloo', cursive;
-    font-size: 20px;
-    padding: 0 0 40px;
-  }
-
-  h3 {
-    font-family: 'Quicksand';
-    font-size: 14px;
-  }
-
   .social-media a {
     font-family: 'Font Awesome 5 Brands';
     font-size: 22px;
   }
+  
+  .heart  {
+    color: red;
+    border: 0;
+  }  
+
+  .project-description {
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px 0;
+  }
+  
+
+
