@@ -1,8 +1,8 @@
 :root {
-  --color-primary: #222831; 
+  --color-primary: #222831;
   --color-primaryMedium: #2E3642;
   --color-accent: #3C4757;
-  --color-grayLightMedium:#E5E7EA;
+  --color-grayLightMedium: #E5E7EA;
   --color-grayLight: #EEE;
   --color-grayMedium: #BBB;
   --color-grayDark: #313337;
@@ -17,167 +17,188 @@
 /*--- General styles ---*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .section-title {
-    font-family: 'Baloo', cursive;
-    font-size: 20px;
-    padding: 0 0 40px;
-    text-align: center;
-  }
+body {
+  background: #f7f7f7;
+}
 
-  .subtitle {
-    font-family: 'Quicksand';
-    font-size: 16px;
-    padding-bottom: 5px;
-  }
+.section-title {
+  font-family: 'Baloo', cursive;
+  font-size: 20px;
+  padding: 0 0 40px;
+  text-align: center;
+}
 
-  .author-post{
-    font-family: 'Quicksand';
-    font-size: 14px;
-    padding-bottom: 5px;
-  }
+.subtitle {
+  font-family: 'Quicksand';
+  font-size: 16px;
+  padding-bottom: 5px;
+}
 
-  .date-post {
-    font-family: 'Quicksand';
-    font-size: 12px;
-    padding-bottom: 5px;
-  }
+.author-post {
+  font-family: 'Quicksand';
+  font-size: 14px;
+  padding-bottom: 5px;
+}
 
-  p.author-post span, p.date-post span {
-    font-weight: bold;
-  }
+.date-post {
+  font-family: 'Quicksand';
+  font-size: 12px;
+  padding-bottom: 5px;
+}
 
-  .more-projects, .more-post {
-    max-width: 300px;
-    min-width: 250px;
-    width: auto;
-    height: 40px;
-    border-radius: 3px;
-    color: var(--color-primary);
-    background: var(--color-textLight);
-    border: 0;
-    margin: 0 auto 30px;
-    text-align: center;
-    text-decoration: underline;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
-  }
+p.author-post span, p.date-post span {
+  font-weight: bold;
+}
 
-  .more-projects:hover, .more-post:hover {
-    transform: scale(1.1);
-    transition: .3s ease-in-out;
-    border: 1px solid var(--color-primary);
-    cursor: pointer;
-    text-decoration: none;
-  }
+.more-projects, .more-post {
+  max-width: 300px;
+  min-width: 250px;
+  width: auto;
+  height: 40px;
+  border-radius: 3px;
+  color: var(--color-primary);
+  background: none;
+  border: 0;
+  margin: 0 auto 30px;
+  text-align: center;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+}
 
+.more-projects:hover, .more-post:hover {
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  text-decoration: none;
+}
 
-    /*--- Header ---*/
+.btn-card {
+  max-width: 300px;
+  min-width: 250px;
+  width: auto;
+  height: 40px;
+  border-radius: 3px;
+  color: var(--color-primary);
+  background: var(--color-textLight);
+  border: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+}
 
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    max-width: 975px;
-    margin: 0 auto;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-  
-  nav li {  
-    padding-left: 20px;
-    list-style: none;
-  }
-  
-  a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-family: 'Baloo', cursive;
-    font-size: 16px;
-  }
-  
-  /* ----- Hero Content ----- */
-  
-  .hero {
-    padding: 3% 0;
-    text-align: center;
-    max-width: 975px;
-    margin: 0 auto;
-  }
+.btn-card:hover {
+  transform: scale(1.05);
+  transition: .2s ease-in;
+  cursor: pointer;
+  background: var(--color-primaryMedium);
+  color: var(--color-textLight);
+}
 
-  .title-hero {
-    font-family: 'Courgette';
-    font-size: 40px;
-    padding: 30px 0;
-  }
+.portfolio-projectsContainer, .blog-postContainer, .form-contact {
+  text-decoration: none;
+  color: var(--color-textDark);
+  box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.3);
+}
 
-  .hero-image img {
-    border-radius: 100px;
-  }
-  
-  .hero-description {
-    text-align: left;
-    font-family: 'Quicksand', sans-serif;
-  }
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: 'Baloo', cursive;
+  font-size: 16px;
+}
 
-  /* --- Portfolio --- */
+/*--- Header ---*/
 
-  .portfolio {
-    max-width: 975px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-  }
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  max-width: 975px;
+  margin: 0 auto;
+}
 
-  .project-container {
-    padding: 20px;
-    margin: 0 auto;
-  }
+nav ul {
+  display: flex;
+}
 
-  .img-project img {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
 
-  .portfolio-projectsContainer {
-    max-width: 300px;
-    width: auto;
-    min-height: 300px;
-    max-height: 600px;
-    height: auto;
-    background: var(--color-grayLightMedium);
-    border-radius: 5px;
-  }
+.menu-header:hover {
+  color: var(--color-accent);
+}
 
-  .project-btn {
-    max-width: 300px;
-    min-width: 250px;
-    width: auto;
-    height: 40px;
-    border-radius: 3px;
-    color: var(--color-primary);
-    background: var(--color-textLight);
-    border: 0;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
-  }
+/* ----- Hero Content ----- */
+
+.hero {
+  padding: 3% 0;
+  text-align: center;
+  max-width: 975px;
+  margin: 0 auto;
+}
+
+.title-hero {
+  font-family: 'Courgette';
+  font-size: 40px;
+  padding: 30px 0;
+}
+
+.hero-image img {
+  border-radius: 100px;
+}
+
+.hero-description {
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* --- Portfolio --- */
+
+.portfolio {
+  max-width: 975px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.project-container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.img-project img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.portfolio-projectsContainer {
+  max-width: 300px;
+  width: auto;
+  min-height: 300px;
+  max-height: 600px;
+  height: auto;
+  background: var(--color-grayLightMedium);
+  border-radius: 5px;
+}
 
 /* --- Blog post --- */
 
@@ -211,29 +232,11 @@
   padding: 10px 0 15px;
 }
 
-.post-button {
-  max-width: 300px;
-  min-width: 250px;
-  width: auto;
-  height: 40px;
-  border-radius: 3px;
-  color: var(--color-primary);
-  background: var(--color-textLight);
-  border: 0;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
-}
-
 /*--- Contact ---*/
 
 .form-contact {
   width: 500px;
-  background: var(--color-grayLightMedium); 
+  background: var(--color-grayLightMedium);
   margin: 0 auto 40px;
   border-radius: 5px;
   padding: 30px;
@@ -241,7 +244,7 @@
 
 .form-contactWrapper {
   width: 500px;
-  background: var(--color-grayLightMedium); 
+  background: var(--color-grayLightMedium);
   margin: 40px auto;
   border-radius: 5px;
   padding: 30px;
@@ -259,7 +262,7 @@ label {
   padding: 15px 0;
 }
 
-.input-container input  {
+.input-container input {
   font-family: 'Quicksand', sans-serif;
   font-size: 12px;
   text-align: left;
@@ -312,6 +315,13 @@ textarea {
   font-size: 14px;
 }
 
+.btn-form input:hover {
+  transform: scale(1.05);
+  transition: .2s ease-in;
+  cursor: pointer;
+  background: var(--color-primaryMedium);
+  color: var(--color-textLight);
+}
 
 /*--- View more --- */
 
@@ -329,6 +339,7 @@ textarea {
   padding: 40px;
   text-align: center;
   color: var(--color-textLight);
+  box-shadow: 0px -2px 16px 8px rgba(0,0,0,0.3);
 }
 
 .btn-oneago input {
@@ -349,59 +360,71 @@ textarea {
   font-size: 14px;
 }
 
-  /* ---- Footer ----*/
-  
-  .footer {
-    background-color: var(--color-primary);
-    color: var(--color-grayLight);
-    height: auto;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .footer-content {
-    max-width: 975px;
-    margin: 0 auto;
-  }
-
-  .footer a {
-    color: var(--color-textLight);
-  }
-  
-  .section-footerWrapper {
-    display: block;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 12px;
-  }
-
-  .footer-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-  }
-
-  .footer-mediumSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
-  }
-  .social-media a {
-    font-family: 'Font Awesome 5 Brands';
-    font-size: 22px;
-  }
-  
-  .heart  {
-    color: red;
-    border: 0;
-  }  
-
-  .project-description {
-    font-family: 'Quicksand', sans-serif;
-    padding: 15px 0;
-  }
-  
+.btn-oneago input:hover {
+  transform: scale(1.05);
+  transition: .2s ease-in;
+  cursor: pointer;
+  background: var(--color-primaryMedium);
+  color: var(--color-textLight);
+}
 
 
+/* ---- Footer ----*/
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-grayLight);
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-content {
+  max-width: 975px;
+  margin: 0 auto;
+}
+
+.footer a {
+  color: var(--color-textLight);
+}
+
+.section-footerWrapper {
+  display: block;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+}
+
+.section-footerWrapper a:hover, .footer-mediumSection a:hover, .footer-nav a:hover {
+  color: var(--color-grayMedium);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.footer-mediumSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.social-media a {
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 22px;
+  padding-right: 2px;
+}
+
+.heart {
+  color: red;
+  border: 0;
+}
+
+.project-description {
+  font-family: 'Quicksand', sans-serif;
+  padding: 15px 0;
+}
