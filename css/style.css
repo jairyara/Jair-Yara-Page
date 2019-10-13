@@ -123,6 +123,12 @@ a {
 
 /*--- Header ---*/
 
+.header {
+  position: sticky;
+  top: 0;
+  background: #f7f7f7;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -421,7 +427,7 @@ textarea {
 
 .heart {
   color: red;
-  border: 0;
+  border-color: red;
 }
 
 .project-description {
